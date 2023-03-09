@@ -31,7 +31,7 @@ const Body = () => {
       center={center}
       zoom={4}
       scrollWheelZoom={false}
-      style={{ height: '91vh', width: '100wh' }}
+      style={{ height: '93vh', width: '100wh' }}
     >
       <ChangeView center={center} />
       <TileLayer
