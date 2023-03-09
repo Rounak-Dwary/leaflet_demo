@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import ReactDOM from 'react-dom/client'
-import './index.css'
 import Header from './Header'
 import MyContext from './Context'
 import Body from './Body'
