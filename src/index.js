@@ -1,17 +1,20 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React, { useState } from 'react'
+import ReactDOM from 'react-dom/client'
+import './index.css'
+import Header from './Header'
+import MyContext from './Context'
+import Body from './Body'
+const App = () => {
+  const [center, setCenter] = useState([39.57741898170538, -98.70117187500001])
+  const [location, setLocation] = useState('America')
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+  return (
+    <MyContext.Provider value={{ center, setCenter, location, setLocation }}>
+      <Header style={{ marginBottom: 0 }} />
+      <Body style={{ marginTop: 0 }} />
+    </MyContext.Provider>
+  )
+}
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+const root = ReactDOM.createRoot(document.getElementById('root'))
+root.render(<App />)
