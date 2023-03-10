@@ -32,9 +32,9 @@ const Body = () => {
         attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
       />
       {cities.map((it) => {
-        const { rank, latitude, longitude, city, population } = it
+        const { id, latitude, longitude, city } = it
         return (
-          <Marker key={rank} position={[latitude, longitude]} icon={icon}>
+          <Marker key={id} position={[latitude, longitude]} icon={icon}>
             <Popup>You are at {city}</Popup>
           </Marker>
         )
