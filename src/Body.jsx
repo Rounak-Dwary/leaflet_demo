@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext } from 'react'
 import {
   MapContainer,
   Marker,
@@ -6,7 +6,6 @@ import {
   TileLayer,
   useMap,
   Tooltip,
-  Pane,
 } from 'react-leaflet'
 import L from 'leaflet'
 import 'leaflet/dist/leaflet.css'
@@ -17,6 +16,47 @@ function ChangeView({ center }) {
   const map = useMap()
   map.setView(center, map.getZoom())
   return null
+}
+const colorCodes = [
+  { status: 'Healthy', color: '#56ea47' },
+  { status: 'Danger', color: '#e93a3a' },
+  { status: 'Dead', color: '#8b8b8b' },
+  { status: 'Warning', color: '#beb51e' },
+]
+
+const ColorBox = ({ colorCodes }) => {
+  const colorCodeList = Object.entries(colorCodes).map(([key, value]) => (
+    <li key={key}>
+      <span
+        style={{
+          backgroundColor: value.color,
+          width: '20px',
+          height: '20px',
+          display: 'inline-block',
+        }}
+      ></span>{' '}
+      {value.status}
+    </li>
+  ))
+
+  return (
+    <div
+      style={{
+        position: 'absolute',
+        bottom: '20px',
+        left: '20px',
+        zIndex: 1000,
+        backgroundColor: 'white',
+        padding: '10px',
+        borderRadius: '5px',
+        boxShadow: '0px 0px 5px rgba(0, 0, 0, 0.2)',
+      }}
+    >
+      <ul style={{ listStyle: 'none', margin: '0', padding: '0' }}>
+        {colorCodeList}
+      </ul>
+    </div>
+  )
 }
 
 const Body = () => {
@@ -97,6 +137,8 @@ const Body = () => {
         const { id } = it
         return <MyMarker key={id} it={it} />
       })}
+
+      <ColorBox colorCodes={colorCodes} />
     </MapContainer>
   )
 }
