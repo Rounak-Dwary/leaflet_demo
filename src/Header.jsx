@@ -19,7 +19,7 @@ const Header = () => {
   return (
     <>
       <Navbar style={{ marginBottom: 0 }} color='dark' dark>
-        <NavbarBrand href='https://www.viasat.com/'>
+        <NavbarBrand href='/'>
           <img
             alt='logo'
             src='https://viasatprod-63.adobecqms.net/content/dam/us-site/corporate/images/int_vsat_tm_rgb_wht_card.jpg'

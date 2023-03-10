@@ -1,12 +1,5 @@
 import React, { useContext } from 'react'
-import {
-  MapContainer,
-  Marker,
-  Popup,
-  TileLayer,
-  useMap,
-  Tooltip,
-} from 'react-leaflet'
+import { MapContainer, Marker, Popup, TileLayer, useMap } from 'react-leaflet'
 import L from 'leaflet'
 import 'leaflet/dist/leaflet.css'
 import MyContext from './Context'
@@ -14,7 +7,7 @@ import cities from './cities'
 
 const icon = L.icon({
   iconUrl: 'https://cdn-icons-png.flaticon.com/512/290/290785.png',
-  iconSize: [40, 30],
+  iconSize: [25, 25],
   shadowSize: [30, 40],
   shadowAnchor: [4, 40],
 })
@@ -43,7 +36,6 @@ const Body = () => {
         return (
           <Marker key={rank} position={[latitude, longitude]} icon={icon}>
             <Popup>You are at {city}</Popup>
-            <Tooltip sticky>Population:{population}</Tooltip>
           </Marker>
         )
       })}
