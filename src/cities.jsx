@@ -5,7 +5,7 @@ const cities = [
     longitude: -74.0059413,
     id: '1',
     state: 'New York',
-    status: 'healthy',
+    status: 'Healthy',
   },
   {
     city: 'Los Angeles',
@@ -13,7 +13,7 @@ const cities = [
     longitude: -118.2436849,
     id: '2',
     state: 'California',
-    status: 'healthy',
+    status: 'Healthy',
   },
   {
     city: 'Chicago',
@@ -21,7 +21,7 @@ const cities = [
     longitude: -87.6297982,
     id: '3',
     state: 'Illinois',
-    status: 'warning',
+    status: 'Warning',
   },
   {
     city: 'Houston',
@@ -29,7 +29,7 @@ const cities = [
     longitude: -95.3698028,
     id: '4',
     state: 'Texas',
-    status: 'healthy',
+    status: 'Healthy',
   },
   {
     city: 'Philadelphia',
@@ -37,7 +37,7 @@ const cities = [
     longitude: -75.1652215,
     id: '5',
     state: 'Pennsylvania',
-    status: 'healthy',
+    status: 'Healthy',
   },
   {
     city: 'Phoenix',
@@ -45,7 +45,7 @@ const cities = [
     longitude: -112.0740373,
     id: '6',
     state: 'Arizona',
-    status: 'warning',
+    status: 'Warning',
   },
   {
     city: 'San Antonio',
@@ -53,7 +53,7 @@ const cities = [
     longitude: -98.49362819999999,
     id: '7',
     state: 'Texas',
-    status: 'dead',
+    status: 'Dead',
   },
   {
     city: 'San Diego',
@@ -61,7 +61,7 @@ const cities = [
     longitude: -117.1610838,
     id: '8',
     state: 'California',
-    status: 'danger',
+    status: 'Danger',
   },
   {
     city: 'Dallas',
@@ -69,7 +69,7 @@ const cities = [
     longitude: -96.79698789999999,
     id: '9',
     state: 'Texas',
-    status: 'danger',
+    status: 'Danger',
   },
   {
     city: 'San Jose',
@@ -77,7 +77,7 @@ const cities = [
     longitude: -121.8863286,
     id: '10',
     state: 'California',
-    status: 'dead',
+    status: 'Dead',
   },
   {
     city: 'Austin',
@@ -85,7 +85,7 @@ const cities = [
     longitude: -97.7430608,
     id: '11',
     state: 'Texas',
-    status: 'danger',
+    status: 'Danger',
   },
   {
     id: '12',
@@ -93,7 +93,7 @@ const cities = [
     country: ' Turkey',
     latitude: 41.013611,
     longitude: 28.955,
-    status: 'danger',
+    status: 'Danger',
   },
   {
     id: '13',
@@ -101,7 +101,7 @@ const cities = [
     country: ' Russia',
     latitude: 55.75,
     longitude: 37.616667,
-    status: 'healthy',
+    status: 'Healthy',
   },
   {
     id: '14',
@@ -109,7 +109,7 @@ const cities = [
     country: ' United Kingdom',
     latitude: 51.507222,
     longitude: 0.1275,
-    status: 'healthy',
+    status: 'Healthy',
   },
   {
     id: '15',
@@ -117,7 +117,7 @@ const cities = [
     country: ' Russia',
     latitude: 59.95,
     longitude: 30.3,
-    status: 'healthy',
+    status: 'Warning',
   },
   {
     id: '16',
@@ -125,7 +125,7 @@ const cities = [
     country: ' Germany',
     latitude: '52.516667',
     longitude: '13.383333',
-    status: 'healthy',
+    status: 'Healthy',
   },
   {
     id: '17',
@@ -133,7 +133,7 @@ const cities = [
     country: ' Spain',
     latitude: '40.383333',
     longitude: '-3.716667',
-    status: 'healthy',
+    status: 'Healthy',
   },
   {
     id: '18',
@@ -141,7 +141,7 @@ const cities = [
     country: ' Ukraine',
     latitude: '50.45',
     longitude: '30.523333',
-    status: 'healthy',
+    status: 'Dead',
   },
   {
     id: '19',
@@ -149,7 +149,7 @@ const cities = [
     country: ' Italy',
     latitude: '41.9',
     longitude: '12.5',
-    status: 'warning',
+    status: 'Warning',
   },
   {
     id: '20',
@@ -157,7 +157,7 @@ const cities = [
     country: ' France',
     latitude: '48.8567',
     longitude: '2.3508',
-    status: 'dead',
+    status: 'Dead',
   },
 ]
 
