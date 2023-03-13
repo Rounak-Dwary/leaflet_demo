@@ -6,6 +6,7 @@ import MyContext from './Context'
 const MyMarker = ({ it }) => {
   const { toolTipVisibilityRef } = useContext(MyContext)
   const { id, latitude, longitude, city, status } = it
+
   let iconUrl = require('./image san/hub_green.png')
   switch (status) {
     case 'Warning':
@@ -29,7 +30,7 @@ const MyMarker = ({ it }) => {
   })
 
   return (
-    <Marker position={[latitude, longitude]} icon={icon}>
+    <Marker position={[latitude, longitude]} icon={icon} title='Message'>
       <Popup>You are at {city}</Popup>
       {toolTipVisibilityRef.current && (
         <Tooltip direction='bottom' opacity={0.8} offset={[0, 5]} permanent>

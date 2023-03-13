@@ -4,6 +4,7 @@ import 'leaflet/dist/leaflet.css'
 import MyContext from './Context'
 import ColorBox from './ColorBox'
 import MyMarker from './MyMarker'
+import MarkerClusterGroup from 'react-leaflet-markercluster'
 
 function ChangeView({ center }) {
   const map = useMap()
